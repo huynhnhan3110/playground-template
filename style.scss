@@ -1,0 +1,17 @@
+$primary-color: yellow;
+
+@mixin flexbox() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  @include flexbox();
+  background-color: $primary-color;
+  &__item {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
